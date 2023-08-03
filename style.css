@@ -1,0 +1,113 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Space Mono', monospace;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: "Inconsolata", monospace;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.content-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-img img {
+    width: 539px;
+    height: 447px;
+    margin-right: 70px;
+}
+
+.content-info h1 {
+    font-size: 2.75em;
+    font-family: "Space Mono", monospace;
+    color: #333333;
+    font-weight: 700;
+    margin: 35px auto;
+    line-height: normal;
+    letter-spacing: -2.24px;
+}
+
+.content-info p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #4f4f4f;
+    font-family: "Space Mono", monospace;
+    line-height: 1.5em;
+}
+
+button {
+    width: 216px;
+    height: 68px;
+    background-color: #333333;
+    margin: 50px 0;
+    border: none;
+    color: white;
+    font-family: "Space Mono", monospace;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 680px) {
+    .content-container {
+        flex-direction: column;
+        justify-content: center;
+        width: 350px;
+    }
+
+    .content-img img {
+        width: 286px;
+        height: 220px;
+    }
+
+    .content-info h1 {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -1.68px;
+    }
+
+    .content-info p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.63px;
+    }
+
+    button {
+        width: 216px;
+        height: 68px;
+        flex-shrink: 0;
+    }
+}
